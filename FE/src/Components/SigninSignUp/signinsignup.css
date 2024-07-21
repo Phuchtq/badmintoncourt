@@ -1,0 +1,46 @@
+.logo {
+    color: white;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.logo .icon {
+    color: hsl(26, 93%, 50%);
+    font-size: 70px;
+    margin-right: 10px;
+}
+.logo .signin-h1{
+    font-size: 70px;
+    color: #fff;
+}
+
+.body-element{
+    display: flex;
+    background-image: url('../../Assets/login.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 13px;
+}
+.body{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+.login{
+    padding: 112px;
+    margin-left: 20px;
+}
+.signin-text-element{
+    margin-left: 75px;
+    margin-top: 80px;
+    font-family: "Poetsen One", sans-serif;
+}
+.signin-h1, .signin-h2, .signin-h3, .signin-p, .signin-a{
+    color: #fff;
+}
+.signin-p{
+    text-align: justify;
+}
+

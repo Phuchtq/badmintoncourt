@@ -1,0 +1,225 @@
+.view-history-wrapper::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../Assets/image5.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.view-history-booking-history {
+  width: 90%;
+  margin: 60px auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.view-history-table-wrapper {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.view-history-booking-table,
+.view-history-today-booking-table,
+.view-history-upcoming-booking-table,
+.view-history-past-booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+}
+
+.view-history-booking-table th,
+.view-history-booking-table td,
+.view-history-today-booking-table th,
+.view-history-today-booking-table td,
+.view-history-upcoming-booking-table th,
+.view-history-upcoming-booking-table td,
+.view-history-past-booking-table th,
+.view-history-past-booking-table td {
+  padding: 15px;
+  text-align: center;
+}
+
+.view-history-today-booking-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.view-history-upcoming-booking-table th {
+  background-color: lightblue;
+  color: white;
+}
+
+.view-history-past-booking-table th {
+  background-color: red;
+  color: white;
+}
+
+.view-history-booking-table tr:nth-child(even),
+.view-history-today-booking-table tr:nth-child(even),
+.view-history-upcoming-booking-table tr:nth-child(even),
+.view-history-past-booking-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.view-history-booking-table tr:hover,
+.view-history-today-booking-table tr:hover,
+.view-history-upcoming-booking-table tr:hover,
+.view-history-past-booking-table tr:hover {
+  background-color: #ddd;
+}
+
+.view-history-booking-table .actions,
+.view-history-today-booking-table .actions,
+.view-history-upcoming-booking-table .actions,
+.view-history-past-booking-table .actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.view-history-error-message {
+  color: red;
+  text-align: center;
+}
+
+.view-history-profile-content h2 {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 40px;
+  color: hsl(26, 93%, 50%);
+}
+
+.upcoming-table {
+  margin-bottom: 40px;
+}
+
+.past-table {
+  margin-top: 40px;
+}
+.view-history-header{
+  width: 100%;
+  text-align: center;
+}
+
+.view-history-footer {
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* .view-history-footer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.view-history-modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+} */
+
+.view-history-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.view-history-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.view-history-textarea {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.view-history-button, .view-history-button-small {
+  padding: 5%;
+  margin: 4%;
+  background: #ff9900;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.view-history-button:hover, .view-history-button-small:hover {
+  background-color: #e68a00;
+  transform: translateY(-2px);
+}
+.view-history-cancel-btn{
+  background: #ff0000;
+}
+.view-history-cancel-btn:hover {
+  background-color: #aa0000;
+  transform: translateY(-2px);
+}
+.warning{
+  font-weight: 700;
+  color: #f00;
+}
+
+.vh-feedback-btn{
+  background-color: #e68a00;
+  color: white;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  border: none;
+}
+.right-align-btn{
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+}
+.btn-disabled{
+  background-color: #aaaaaa;
+}
+.btn-disabled:hover{
+  background-color: #aaaaaa;
+  transform: translateY(0px);
+}
+.timeSection select{
+  width: 30%;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.dateSection, .timeSection, .branchSection, .courtSection{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#vhDatePicker{
+  display: inline;
+  width: 50%;
+  margin-left: 5%;
+}
